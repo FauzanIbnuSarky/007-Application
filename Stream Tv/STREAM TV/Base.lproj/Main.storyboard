@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UK8-hz-KRm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Developer Info-->
+        <scene sceneID="tta-MQ-A6k">
+            <objects>
+                <viewController id="SrO-Vh-vLX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IHe-1b-Rh2"/>
+                        <viewControllerLayoutGuide type="bottom" id="TTW-Px-das"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RgF-5L-6Cd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ASda.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sFo-4N-hCv">
+                                <rect key="frame" x="0.0" y="-12" width="375" height="648"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Developer Info" image="INFO.png" id="dag-Ho-hZX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euw-mk-UiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202.40000000000001" y="339.58020989505252"/>
+        </scene>
+        <!--TV Stream-->
+        <scene sceneID="LUE-RP-s7l">
+            <objects>
+                <viewController id="6en-xi-IKS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HeD-QM-Qms"/>
+                        <viewControllerLayoutGuide type="bottom" id="VX6-mw-Jjg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2zO-eo-0Q1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GkR-pe-1PC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Jly-c0-IF7"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93n-cx-hkb">
+                                <rect key="frame" x="125" y="269" width="125" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play.png"/>
+                                <connections>
+                                    <segue destination="Igy-HW-vTd" kind="modal" id="glo-fT-8IQ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-rodjatv.png" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-3k-pRp">
+                                <rect key="frame" x="118" y="33" width="132" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TV Stream" id="cbk-kY-8DA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ero-JP-q4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202.40000000000001" y="-320.68965517241384"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3bY-3N-EjL">
+            <objects>
+                <tabBarController id="UK8-hz-KRm" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OSn-nO-Lvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6en-xi-IKS" kind="relationship" relationship="viewControllers" id="uyK-UF-UHz"/>
+                        <segue destination="SrO-Vh-vLX" kind="relationship" relationship="viewControllers" id="K7V-fS-P9X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTv-sP-p2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="14"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="9am-bL-7eM">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Igy-HW-vTd" customClass="Streaming_bosq" customModule="STREAM_TV" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cve-5C-Fb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ASda.jpg" width="736" height="1377"/>
+        <image name="INFO.png" width="24" height="24"/>
+        <image name="logo-rodjatv.png" width="1661" height="483"/>
+        <image name="play.png" width="128" height="128"/>
+    </resources>
+</document>
